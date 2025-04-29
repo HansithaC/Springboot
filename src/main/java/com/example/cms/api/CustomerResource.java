@@ -22,13 +22,13 @@ public class CustomerResource {
 
     @GetMapping
     public List<Customer> getCustomers(){
-        return customerService.getCustomers();
+        return customerService.getCustomerList();
 
 
     }
     @GetMapping(value = "/{customerId}")
     public Customer getCustomer(@PathVariable("customerId") int customerId) {
-        return customerService.getCustomer(customerId);
+        return customerService.getcustomer(customerId);
     }
 
     @PutMapping(value = "/{customerId}")

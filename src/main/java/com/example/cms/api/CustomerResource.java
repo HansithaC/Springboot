@@ -28,12 +28,12 @@ public class CustomerResource {
     }
     @GetMapping(value = "/{customerId}")
     public Customer getCustomer(@PathVariable("customerId") int customerId) {
-        return customerService.getcustomer(customerId);
+        return customerService.getcustomerList(customerId);
     }
 
     @PutMapping(value = "/{customerId}")
     public Customer updateCustomer(@PathVariable("customerId") int customerId, @RequestBody Customer customer) {
-        return customerService.updateCustomer(customerId, customer);
+        return customerService.updatecustomer(customerId, customer);
     }
 
     @DeleteMapping(value = "/{customerId}")

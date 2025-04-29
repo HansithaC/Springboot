@@ -81,16 +81,3 @@ public class CustomerService {
     }
 
     
-
-
-    public List<Customer> getCustomers() {
-        List<Customer> customerList = List.of();
-        return customerList;
-    }
-
-
-
-    public Customer updateCustomer(int customerId, Customer customer) {
-        return updatecustomer(customerId, customer);
-    }
-}

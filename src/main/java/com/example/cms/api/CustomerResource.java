@@ -28,7 +28,7 @@ public class CustomerResource {
     }
     @GetMapping(value = "/{customerId}")
     public Customer getCustomer(@PathVariable("customerId") int customerId) {
-        return customerService.getcustomerList(customerId);
+        return customerService.getCustomerList(customerId);
     }
 
     @PutMapping(value = "/{customerId}")
